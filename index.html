@@ -54,19 +54,140 @@ title: Abhijit Khanna, Software Developer
 
 	</div>		<!-- /.photocredit -->
 
+	<h3 id="code-samples">Ruby Code Snippets</h3>
+
+	<hr class="yellow">
+
+	<div class="box">
+		<h4>Temperature Conversion</h4>
+		<p>This ruby program will prompt the user for a temperature in degrees celsius and let the user know what the corresponding temperature is in fahrenheit</p>
+	</div>
+
+		<div class="codebox">
+	<pre><code class="language-ruby">
+	def celsius_to_fahrenheit(celsius)
+	&nbsp; return celsius * 9 / 5 + 32
+	end
+
+	puts &quot;Please enter degrees in Celcius: &quot;
+	celsius = gets.chomp.to_f
+
+	puts &quot;You entered #{celsius} degrees Celsius&quot;
+	puts &quot;The temperature is #{celsius_to_fahrenheit(celsius)} degress Fahrenheit.&quot;
+	</code></pre>
+		</div>
+
+		<br class="clear"/>
+
+		<div class="codebox">
+	<pre><code class="language-ruby">
+	def ordinal_it(input, ones_digit)
+
+	  if input &gt;= 11 &amp;&amp; input &lt;= 13
+	          puts &quot;That's the #{input}th item!&quot;
+	  elsif ones_digit == 1
+	          puts &quot;That's the #{input}st item!&quot;
+	  elsif ones_digit == 2
+	          puts &quot;That's the #{input}nd item!&quot;
+	  elsif ones_digit == 3
+	          puts &quot;That's the #{input}rd item!&quot;
+	  else
+	          puts &quot;That's the #{input}th item!&quot;
+	  end
+	  
+	end
+
+	puts &quot;Please enter a number&quot;
+
+	user_input = (gets.chomp).to_i
+
+	right_most = user_input % 10
+
+	ordinal_it(user_input, right_most)
+	</code></pre>
+		</div>
+
+		<div class="box">
+			<h4>Ordinal Challenge</h4>
+			<p>This ruby program will convert a plain number to the ordinal of the number. So, for example, if the user enters 2, it will display 2nd, if the user enters 3, it will display 3rd, etc.</p>
+		</div>
+
+		<br class="clear"/>
+
+		<div class="box">
+			<h4>Foobar</h4>
+			<p>This ruby program is an adaption of the classic technical interview problem which displays sequences of the Foobar pattern</p>
+		</div>
+
+		<div class="codebox">
+	<pre><code class="language-ruby">
+	def div_by_3(num)
+	  
+	  if (num % 3) == 0
+	    return true
+	  else
+	    return false
+	  end
+	  
+	end
+
+	def div_by_5(num)
+
+	  if (num % 5) == 0
+	    return true
+	  else
+	    return false
+	  end  
+	  
+	end
+
+	def foobar_main(num_elements)
+	  
+	  i = 1
+	  
+	  num_elements.times do
+	    
+	    if (div_by_3(i)) &amp;&amp; (div_by_5(i))
+	      puts &quot;Foobar&quot;
+	    elsif (div_by_3(i))
+	      puts &quot;Foo&quot;
+	    elsif (div_by_5(i))
+	      puts &quot;Bar&quot;
+	    else
+	      puts i
+	    end
+	  
+	     i = i + 1
+	  end
+	  
+	end
 
 
+	puts &quot;How many elements do you want to see the foobar pattern for? (please enter an integer number)&quot;
+	elements = (gets.chomp).to_i
 
+	foobar_main(elements)
+	</code></pre>
+		</div>
 
+		<br class="clear"/>
 
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="yellow" />
 
+		<div class="box">
+			<h4></h4>
+	<!-- 		<img src="splurty.png" class="full-width"/> -->
+			<p>In Progress - check back shortly!</p>
+		</div>
 
+		<br class="clear"/>
 
+		<h3 id="skills-tools">Skills &amp; Tools</h3>
+		<hr class="yellow" />
 
-
-
-
-
+		<p class="skills-and-tools">Abhijit has developed proficiency and expertise in the following programming languages and comfort with the following tools.</p>
+	
 	<div class="icons">
 		<img src="github.png" class="icon"/>
 		<img src="slack.png" class="icon"/>
