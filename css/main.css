@@ -1,43 +1,178 @@
+
+
 body {
-    margin: 60px auto;
-    width: 70%;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
+
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: white;
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 0;
 }
+
+h2 {
+    color: white;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.Bio {
+    color: white;
+    font-size: 18px;
+}
+
+.me{
+    height: 150px;
+    /*width: 150px;*/
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white;
+    margin-top: 40px;
+}
+
+.about {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.gray {
+    height: 3px;
+    background-color: #7e8485;
+    border: none;
+    width: 50px;
+}
+
+
+.photocredit {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.tableStyle {
+    color: white;
+    font-size: 20px
+}
+
+td {
+    padding: 18px;
+}
+
+.about-container{
+    background: url(bg-tech.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 900px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 100px;
+}
+
+.yellow {
+    border-top: 5px double ##F5A623;
+    width: 250px;
+    border-bottom: none;
+    border-right: none;
+}
+
+.box {
+    float: left;
+    margin-left: 5%;
+    width: 42.5%;
+    margin-top: 80px;
+}
+
+.codebox {
+    float: left;
+    margin-left: 5%;
+    width: 42.5%;
+    margin-top: 80px;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.clear{
+    clear: both;
+}
+
+h4 {
+    text-align: center;
+    font-size: 24px;
+}
+
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    text-align: center;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.full-width{
+    width: 100%;
 }
 
-ul.posts li {
-    list-style: none;
+.skills-and-tools{
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.icons{
+    text-align: center;
+}
+
+.icon{
+    margin: 30px 0;
+}
+
+.contact-me{
+    height: 350px;
+    background-color: #202020;
+    padding-top: 30px;
+}
+
+.contact-headline{
+    color: white;
+    margin: 30px auto;
+}
+
+.contact-info{
+    color: white;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.contact-link{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    font-size: 12px;
+    width: 100px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 30px;
+}
+
+.hire-me{
+    border-style: solid;
+    border-color: white;
+    text-align: center;
 }
